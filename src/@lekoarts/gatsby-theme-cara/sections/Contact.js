@@ -6,36 +6,16 @@ import Button from "@material-ui/core/Button";
 
 const Contact = () => {
   const classes = useStyles();
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-
-  const sendForm = async (e) => {
-    e.preventDefault();
-    const url = "https://formspree.io/moqkprwq";
-    let formData = new FormData();
-    formData.append("Full Name", name);
-    formData.append("Email", email);
-    formData.append("Message", message);
-    try {
-      const requestOptions = { method: "POST", body: formData };
-      await fetch(url, requestOptions);
-      console.log("form sent");
-    } catch (err) {
-      console.log(err);
-      console.log("fail to send");
-    }
-  };
 
   return (
     <Container>
       <ContactMe method="post" action="https://formspree.io/moqkprwq">
+        {/* <FormWrapper> */}
         <TextField
           label="Full name"
           variant="outlined"
           name="name"
           className={classes.textField}
-          onChange={(e) => setName(e.target.value)}
         />
         <TextField
           label="Email"
@@ -43,14 +23,13 @@ const Contact = () => {
           type="email"
           name="_replyto"
           className={classes.textField}
-          onChange={(e) => setEmail(e.target.value)}
         />
+        {/* </FormWrapper> */}
         <TextField
           label="Message"
           variant="outlined"
           name="message"
           className={classes.textField}
-          onChange={(e) => setMessage(e.target.value)}
         />
         <Button
           variant="contained"
@@ -75,24 +54,24 @@ const Container = styled.div`
   grid-template-columns: 45% 45%;
   justify-content: space-around;
   align-items: center;
-  height: 40vh;
+  /* height: 40vh; */
 `;
 
-const ContactMe = styled.form``;
+const ContactMe = styled.form`
+  margin-top: -0.5rem;
+  margin-bottom: -1rem;
+`;
 
 const ImgContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: center; */
 `;
 
 const useStyles = makeStyles({
   textField: {
     backgroundColor: "#fff",
     textShadow: "rgba(255,255,255,0.15) ",
-    borderColor: "rgb(108, 99, 255);",
-    borderRadius: "7px",
-    borderWidth: "2px",
     width: "100%",
     marginTop: "2vh",
   },
@@ -100,3 +79,10 @@ const useStyles = makeStyles({
     marginTop: "2vh",
   },
 });
+
+const FormWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  align-items: center;
+  justify-content: space-between;
+`;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import ContactPic from "./pics/contactMe.svg";
 
 const Contact = () => {
   const classes = useStyles();
@@ -42,7 +43,7 @@ const Contact = () => {
       </ContactMe>
       <ImgContainer>
         <img
-          src="/contactMe.svg"
+          src={ContactPic}
           style={{ height: "100%", width: "100%" }}
           alt="contact me cooperative"
         />

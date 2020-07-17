@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import CvDev from "./pics/CV-dev.pdf";
 
 const Cv = () => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -20,7 +21,7 @@ const Cv = () => {
     <>
       <h1>CV</h1>
       <Container>
-        <Document file="/CV-dev.pdf">
+        <Document file={CvDev}>
           <Page pageNumber={pageNumber} />
         </Document>
         <Footer>

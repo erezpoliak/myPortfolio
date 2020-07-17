@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
@@ -41,7 +41,11 @@ const Contact = () => {
         </Button>
       </ContactMe>
       <ImgContainer>
-        <img src="/contactMe.svg" style={{ height: "100%", width: "100%" }} />
+        <img
+          src="/contactMe.svg"
+          style={{ height: "100%", width: "100%" }}
+          alt="contact me cooperative"
+        />
       </ImgContainer>
     </Container>
   );
@@ -80,9 +84,9 @@ const useStyles = makeStyles({
   },
 });
 
-const FormWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 48%);
-  align-items: center;
-  justify-content: space-between;
-`;
+// const FormWrapper = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(2, 48%);
+//   align-items: center;
+//   justify-content: space-between;
+// `;

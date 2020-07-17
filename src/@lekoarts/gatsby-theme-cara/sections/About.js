@@ -29,8 +29,14 @@ const About = () => {
           style={{ fontSize: "100", color: "#83CD29" }}
           icon={faNodeJs}
         />
-        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" />
-        <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" />
+        <img
+          src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
+          alt="mongodb icon"
+        />
+        <img
+          src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
+          alt="expressjs icon"
+        />
       </IconContainer>
     </Container>
   );

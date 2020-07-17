@@ -35,7 +35,7 @@ const Cv = () => {
               // onClick={() => leftClickHandler()}
               //   onClick={() => handleClick()}
             />
-            <div onClick={() => handleClick()}>
+            <button onClick={() => handleClick()}>
               <FontAwesomeIcon
                 pageNumber={pageNumber}
                 icon={faArrowCircleRight}
@@ -46,7 +46,7 @@ const Cv = () => {
                 // onClick={() => rightClickHandler()}
                 // onClick={() => handleClick()}
               />
-            </div>
+            </button>
           </IconWrapper>
         </Footer>
       </Container>

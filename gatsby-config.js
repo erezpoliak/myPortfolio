@@ -12,7 +12,7 @@ module.exports = {
     siteTitleAlt: `Portfolio`,
   },
   plugins: [
-    `gatsby-plugin-material-ui`,
+    `gatsby-theme-material-ui`,
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
@@ -65,6 +65,5 @@ module.exports = {
         // Add any options here
       },
     },
-    `gatsby-theme-material-ui`,
   ].filter(Boolean),
 };

@@ -13,7 +13,7 @@ const Projects = () => {
       <IconWrapper>
         <FontAwesomeIcon
           icon={faHtml5}
-          style={{ fontSize: "3.5vw", marginLeft: "1.5vw", color: "#e54d26" }}
+          style={{ fontSize: "3.5vw", color: "#e54d26" }}
         />
         <FontAwesomeIcon
           icon={faCss3Alt}
@@ -27,7 +27,7 @@ const Projects = () => {
       <IconWrapper>
         <FontAwesomeIcon
           icon={faHtml5}
-          style={{ fontSize: "3.5vw", marginLeft: "1.5vw", color: "#e54d26" }}
+          style={{ fontSize: "3.5vw", color: "#e54d26" }}
         />
         <FontAwesomeIcon
           icon={faCss3Alt}
@@ -63,7 +63,7 @@ const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 3vw;
+  /* margin-left: 3vw; */
   @media (max-width: 600px) {
     display: none;
   }

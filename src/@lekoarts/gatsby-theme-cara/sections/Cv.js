@@ -11,7 +11,8 @@ import CvDev from "./pics/CV-dev.pdf";
 const Cv = () => {
   const [pageNumber, setPageNumber] = useState(1);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     console.log("im in the function");
     if (pageNumber === 1) setPageNumber(2);
     else setPageNumber(1);
@@ -21,7 +22,7 @@ const Cv = () => {
     <>
       <h1>CV</h1>
       <Container>
-        <Document file={CvDev}>
+        <Document file={CvDev} renderMode="svg">
           <Page pageNumber={pageNumber} />
         </Document>
         <Footer>
@@ -36,7 +37,7 @@ const Cv = () => {
               // onClick={() => leftClickHandler()}
               //   onClick={() => handleClick()}
             />
-            <button onClick={() => handleClick()}>
+            <button onClick={(e) => handleClick()}>
               <FontAwesomeIcon
                 pageNumber={pageNumber}
                 icon={faArrowCircleRight}

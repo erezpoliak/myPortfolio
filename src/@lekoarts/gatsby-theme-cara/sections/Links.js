@@ -7,18 +7,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Links = () => {
   return (
     <Container>
-      <FontAwesomeIcon
-        icon={faGithub}
-        style={{ fontSize: "80", margin: "2vh" }}
-      />
-      <FontAwesomeIcon
-        icon={faLinkedin}
-        style={{ fontSize: "80", margin: "2vh", color: "#0e76a8" }}
-      />
-      <FontAwesomeIcon
-        icon={faEnvelope}
-        style={{ fontSize: "80", margin: "2vh" }}
-      />
+      <a
+        href="https://www.google.com"
+        style={{ textDecoration: "none !important", color: "inherit" }}
+      >
+        <FontAwesomeIcon
+          icon={faGithub}
+          style={{ fontSize: "80", margin: "2vh" }}
+        />
+      </a>
+      <a
+        href="https://www.google.com"
+        style={{ textDecoration: "none !important", color: "inherit" }}
+      >
+        <FontAwesomeIcon
+          icon={faLinkedin}
+          style={{ fontSize: "80", margin: "2vh", color: "#0e76a8" }}
+        />
+      </a>
+      <a
+        href="mailto:poliakerez@gmail.com"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          style={{ fontSize: "80", margin: "2vh" }}
+        />
+      </a>
     </Container>
   );
 };

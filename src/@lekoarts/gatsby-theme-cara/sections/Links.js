@@ -8,7 +8,7 @@ const Links = () => {
   return (
     <Container>
       <a
-        href="https://www.google.com"
+        href="https://www.github.com/erezpoliak"
         style={{ textDecoration: "none !important", color: "inherit" }}
       >
         <FontAwesomeIcon

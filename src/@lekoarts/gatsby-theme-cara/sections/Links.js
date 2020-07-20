@@ -17,7 +17,7 @@ const Links = () => {
         />
       </a>
       <a
-        href="https://www.google.com"
+        href="https://www.linkedin.com/in/erez-poliak-9552091b3/"
         style={{ textDecoration: "none !important", color: "inherit" }}
       >
         <FontAwesomeIcon

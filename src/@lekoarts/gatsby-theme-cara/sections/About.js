@@ -41,19 +41,21 @@ const About = () => {
         />
       </IconContainer>
       <TechDescribe>
-        <DescribeDiv>ReactJs</DescribeDiv>
+        <DescribeDiv>React</DescribeDiv>
         <DescribeDiv>Html5</DescribeDiv>
-        <DescribeDiv>NodeJs</DescribeDiv>
-        <DescribeDiv>RestApi</DescribeDiv>
+        <DescribeDiv>Node.js</DescribeDiv>
+        <DescribeDiv>RESTfulAPI</DescribeDiv>
         <DescribeDiv>ReactHooks</DescribeDiv>
         <DescribeDiv>Javascript</DescribeDiv>
         <DescribeDiv>MongoDB</DescribeDiv>
-        <DescribeDiv>Mongoose</DescribeDiv>
+        <DescribeDiv>mongoose</DescribeDiv>
         <DescribeDiv>ContextAPI</DescribeDiv>
-        <DescribeDiv>ReactRedux</DescribeDiv>
+        <DescribeDiv>Redux</DescribeDiv>
         <DescribeDiv>CSS3</DescribeDiv>
         <DescribeDiv>Express.js</DescribeDiv>
         <DescribeDiv>Jest</DescribeDiv>
+        <DescribeDiv>Java</DescribeDiv>
+        <DescribeDiv>OOP</DescribeDiv>
         <DescribeDiv>And more...</DescribeDiv>
       </TechDescribe>
     </Container>

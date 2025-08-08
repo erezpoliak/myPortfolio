@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Projects = () => {
   return (
     <>
-      <IconWrapper>
+      {/* <IconWrapper>
         <FontAwesomeIcon
           icon={faHtml5}
           style={{ fontSize: "3.5vw", color: "#e54d26" }}
@@ -22,6 +22,13 @@ const Projects = () => {
         <FontAwesomeIcon
           icon={faReact}
           style={{ fontSize: "3.5vw", marginLeft: "1.5vw", color: "#61dafb" }}
+        />
+      </IconWrapper> */}
+      <IconWrapper>
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/ISO_C%2B%2B_Logo.svg"
+          alt="C++ Logo"
+          style={{ width: "3.8vw" }}
         />
       </IconWrapper>
       <IconWrapper>
@@ -40,17 +47,17 @@ const Projects = () => {
         <img
           src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
           alt="expressjs icon"
-          style={{ width: "3.5vw", marginLeft: "1.5vw" }}
+          style={{ width: "5vw", height: "6vh", marginLeft: "1.5vw" }}
         />
         <img
           src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
           alt="expressjs icon"
-          style={{ width: "3.5vw", marginLeft: "1.5vw" }}
+          style={{ width: "5vw", height: "6vh", marginLeft: "1.5vw" }}
         />
         <img
           src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-standard.svg"
           alt="expressjs icon"
-          style={{ width: "3.5vw", marginLeft: "1.5vw" }}
+          style={{ width: "5vw", height: "6vh", marginLeft: "1.5vw" }}
         />
       </IconWrapper>
     </>

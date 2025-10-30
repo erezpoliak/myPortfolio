@@ -13,10 +13,10 @@ const About = () => {
     <Container>
       <h1>Tech Stack</h1>
       <IconContainer>
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
           style={{ fontSize: "10vw", color: "#e54d26" }}
           icon={faHtml5}
-        />
+        /> */}
         <FontAwesomeIcon
           style={{ fontSize: "10vw", color: "#61dafb" }}
           icon={faReact}
@@ -25,9 +25,19 @@ const About = () => {
           style={{ fontSize: "10vw", color: "#f0db4f" }}
           icon={faJsSquare}
         />
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
           style={{ fontSize: "10vw", color: "#83CD29" }}
           icon={faNodeJs}
+        /> */}
+        <img
+          src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"
+          alt="python icon"
+          style={{ width: "10vw" }}
+        />
+        <img
+          src="https://www.vectorlogo.zone/logos/isocpp/isocpp-ar21.svg"
+          alt="cpp icon"
+          style={{ width: "10vw" }}
         />
         <img
           src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
@@ -39,23 +49,28 @@ const About = () => {
           alt="expressjs icon"
           style={{ width: "10vw" }}
         />
+        <img
+          src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg"
+          alt="tensorflow icon"
+          style={{ width: "10vw" }}
+        />
       </IconContainer>
       <TechDescribe>
-        <DescribeDiv>React</DescribeDiv>
-        <DescribeDiv>Html5</DescribeDiv>
+        <DescribeDiv>Numpy</DescribeDiv>
         <DescribeDiv>Node.js</DescribeDiv>
+        <DescribeDiv>Html5</DescribeDiv>
+        <DescribeDiv>Redux</DescribeDiv>
+        <DescribeDiv>Pandas</DescribeDiv>
+        <DescribeDiv>Flask</DescribeDiv>
+        <DescribeDiv>CSS3</DescribeDiv>
+        <DescribeDiv>ContextAPI</DescribeDiv>
+        <DescribeDiv>Matplotlib</DescribeDiv>
+        <DescribeDiv>mongoose</DescribeDiv>
         <DescribeDiv>RESTfulAPI</DescribeDiv>
         <DescribeDiv>ReactHooks</DescribeDiv>
-        <DescribeDiv>Javascript</DescribeDiv>
-        <DescribeDiv>MongoDB</DescribeDiv>
-        <DescribeDiv>mongoose</DescribeDiv>
-        <DescribeDiv>ContextAPI</DescribeDiv>
-        <DescribeDiv>Redux</DescribeDiv>
-        <DescribeDiv>CSS3</DescribeDiv>
-        <DescribeDiv>Express.js</DescribeDiv>
-        <DescribeDiv>Jest</DescribeDiv>
-        <DescribeDiv>Java</DescribeDiv>
+        <DescribeDiv>Scikit-learn</DescribeDiv>
         <DescribeDiv>OOP</DescribeDiv>
+        <DescribeDiv>C</DescribeDiv>
         <DescribeDiv>And more...</DescribeDiv>
       </TechDescribe>
     </Container>

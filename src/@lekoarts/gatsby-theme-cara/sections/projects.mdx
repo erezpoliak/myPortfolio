@@ -13,7 +13,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     link="https://poli-musicgen.netlify.app/"
     bg="url(https://i.postimg.cc/9MSwHcrX/Screenshot-2025-10-25-at-14-53-06.png) center center/100% 100% no-repeat"
   >
-    <div style={{ fontSize: "1.5vw" }}>
+    <div
+      style={{
+        fontSize: "1.5vw",
+        display: "inline-block",
+        background: "rgba(0,0,0,0.6)" /* dark translucent panel for contrast */,
+        padding: "0.8vw 1vw",
+        color: "#fff",
+        borderRadius: "8px",
+        boxShadow: "0 6px 18px rgba(0,0,0,0.35)",
+        textShadow: "0 2px 6px rgba(0,0,0,0.6)",
+        backdropFilter: "blur(4px)",
+      }}
+    >
       Music Generation App: Training LSTM Model + Interactive Piano FullStack
       App
     </div>
